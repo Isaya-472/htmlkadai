@@ -1,0 +1,158 @@
+/* CSSリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+/* font-family  Arial、Helvetica、sans-serif*/
+/* <a>は text-decoration: noneを設定し、文字色は#38b48bを設定*/
+
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+header,
+nav,
+h1,
+main,
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+  padding-top: 10px;
+  color: #fff;
+}
+
+header .heading {
+  text-align: center;
+}
+
+header .heading a {
+  color: #fff;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: #fff;
+}
+
+/* main */
+main {
+  background-color: #ecfcdf;
+  padding: 10px 40px 40px 40px;
+}
+
+main .greeting {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* main中身 */
+.introduction-contents {
+  display: flex;
+}
+
+.introduction-img-area {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.yoko-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.introduction-area {
+  background-color: #fff;
+  width: 70%;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.introduction-menu {
+  font-weight: bold;
+  line-height: 40px;
+  padding-right: 10px;
+}
+
+/* 4行分空ける */
+.introduction-menu .history {
+  padding-bottom: 160px;
+}
+
+/* 右側 */
+.area-contents {
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.contents-context {
+  line-height: 40px;
+}
+
+.social i {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+}
+
+.footer-text {
+  color: #fff;
+  text-align: center;
+  /* 文字上下中央に＝heightと同じ値の100px設定 */
+  line-height: 100px;
+}
+
+/* 画面サイズ合わせ */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .introduction-contents {
+    display: block;
+    width: 100%;
+  }
+
+  .introduction-img-area {
+    width: 100%;
+  }
+
+  .introduction-area {
+    width: 100%;
+    display: block;
+  }
+
+  .area-contents {
+    width: 100%;
+  }
+
+
+
+}
